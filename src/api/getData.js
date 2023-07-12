@@ -9,6 +9,16 @@ const getData = async function() {
     }
 } 
 
+const getHomeData = async function() {
+    const response = await fetch("./data.json")
+    if (response.status == 200) {
+        let data = await response.json()
+        return data.homeText
+    } else {
+        new Error(response.statusText)
+    }
+} 
+
 const getDataMachines = async function() {
     const response = await fetch("./data.json")
     if (response.status == 200) {
@@ -30,4 +40,4 @@ const getDataQuestions = async function() {
 } 
 
 
-export { getData, getDataMachines, getDataQuestions }
+export { getData, getHomeData, getDataMachines, getDataQuestions }
