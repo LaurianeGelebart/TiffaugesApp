@@ -1,0 +1,13 @@
+{
+    "beginningText": "Bienvenue, jeune apprenti ! Te voilà prêt à découvrir le savoir des machines de guerre médiévales. Ensemble, nous allons assaillir ce château. Tu peux consulter le manuel des machines à volonté, il t'enseignera tout ce dont tu as besoin. Car souviens-toi, seul le savoir mène à la victoire.",
+    "endingText": {
+        "winning": [
+            "Bravo, jeune apprenti, la victoire est nôtre ! Grâce à tes connaissances des machines de guerre et à ta stratégie éclairée, le château a finalement capitulé. Les murailles ont cédé sous la puissance de nos engins, et les défenseurs ont été forcés de se rendre. ",
+            "Maintenant que le château est entre nos mains, nous pouvons sécuriser la région et apporter la paix aux terres environnantes. Ton expertise en ingénierie de siège a été cruciale dans cette entreprise. Ensemble, nous avons prouvé que le savoir et la stratégie sont les clés de la réussite sur le champ de bataille."
+        ],
+        "losing": [
+            "Malheureusement, jeune apprenti, la victoire nous a échappé cette fois-ci. Malgré tes efforts acharnés et tes connaissances des machines de guerre, le siège du château s'est avéré plus difficile que prévu. Les défenseurs ont résisté avec détermination, et nos engins n'ont pas réussi à briser leurs murailles.",
+            "Mais ne te décourage pas, nous tirerons des leçons de cette expérience. L'art de la guerre et de l'ingénierie demande persévérance et adaptation. Nous reviendrons avec de nouvelles stratégies et des machines de guerre perfectionnées, et cette fois je te l’assure nous vaincrons ! "
+        ]
+    }
+}

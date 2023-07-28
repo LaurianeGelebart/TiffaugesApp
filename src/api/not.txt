@@ -1,5 +1,16 @@
+const getData = async function() {
+    const response = await fetch("./data.json")
+    if (response.status == 200) {
+        let data = await response.json()
+        console.log(data)
+        return data
+    } else {
+        new Error(response.statusText)
+    }
+} 
+
 const getBeginnigData = async function() {
-    const response = await fetch("./data/data.json")
+    const response = await fetch("./data.json")
     if (response.status == 200) {
         let data = await response.json()
         return data.beginningText
@@ -9,7 +20,7 @@ const getBeginnigData = async function() {
 } 
 
 const getEndingData = async function() {
-    const response = await fetch("./data/data.json")
+    const response = await fetch("./data.json")
     if (response.status == 200) {
         let data = await response.json()
         return data.endingText
@@ -19,7 +30,7 @@ const getEndingData = async function() {
 } 
 
 const getDataMachine = async function(machineName) {
-    const response = await fetch("../data/dataMachines.json")
+    const response = await fetch("../data.json")
     if (response.status == 200) {
         let data = await response.json()
         console.log("data : " + data.infosMachine[machineName])
@@ -30,7 +41,7 @@ const getDataMachine = async function(machineName) {
 } 
 
 const getGalleryMachines = async function() {
-    const response = await fetch("./data/dataMachines.json")
+    const response = await fetch("./data.json")
     if (response.status == 200) {
         let data = await response.json()
         return data.machinesGallery
@@ -40,7 +51,7 @@ const getGalleryMachines = async function() {
 } 
 
 const getDataQuestions = async function() {
-    const response = await fetch("./data/dataQuestions.json")
+    const response = await fetch("./data.json")
     if (response.status == 200) {
         let data = await response.json()
         return data.questions
@@ -50,4 +61,4 @@ const getDataQuestions = async function() {
 } 
 
 
-export { getBeginnigData, getDataMachine, getGalleryMachines, getDataQuestions, getEndingData }
+export { getData, getBeginnigData, getDataMachine, getGalleryMachines, getDataQuestions, getEndingData }

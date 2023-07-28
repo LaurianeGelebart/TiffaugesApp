@@ -1,0 +1,130 @@
+{
+    "machinesGallery": [
+        {
+            "name": "Trébuchet",
+            "img": "drawingTrebuchet.svg"
+        },
+        {
+            "name": "Catapulte",
+            "img": "drawingCatapulte.svg"
+        },
+        {
+            "name": "Grue",
+            "img": "drawingGrue.svg"
+        },
+        {
+            "name": "Couillard",
+            "img": "drawingCouillard.svg"
+        },
+        {
+            "name": "Fauconneau",
+            "img": "drawingFauconneau.svg"
+        },
+        {
+            "name": "Mangonneau",
+            "img": "drawingMangonneau.svg"
+        },
+        {
+            "name": "Bricole",
+            "img": "drawingBricole.svg"
+        },
+        {
+            "name": "Beffroi",
+            "img": "drawingBeffroi.svg"
+        },
+        {
+            "name": "Belier",
+            "img": "drawingBelier.svg"
+        },
+        {
+            "name": "Bombarde",
+            "img": "drawingBombarde.svg"
+        },
+        {
+            "name": "Arbalete",
+            "img": "drawingArbalete.svg"
+        }
+    ],
+    "infosMachine": {
+        "Trébuchet": {
+            "date": "XII-XVIe siècle",
+            "text": "C’est l’engin de jet le plus puissant de l’époque. Il fonctionne sur le principe du contrepoids, du balancier et de la fronde. L’innovation essentielle apportée par les “engeniors” à cette machine est l’articulation du contrepoids. Cette modification garantit un fonctionnement sans à-coups et donc une plus grande précision, tout en accroissant les performances de l’engin.",
+            "personnes": 100,
+            "poids": 140,
+            "portee": 220,
+            "cadence": "1-2"
+        },
+        "Mangonneau": {
+            "date": "XII-XIVe siècle",
+            "text": "Plus ancienne des machines à contrepoids, le mangonneau comporte une masse de terre ou de pierres qui se déplace à l’intérieur de la huche du contrepoids fixe entraînant des à-coups et des vibrations qui fragilisent rapidement la machine et nuisent à la précision.",
+            "personnes": 60,
+            "poids": 100,
+            "portee": 150,
+            "cadence": "2"
+        },
+        "Catapulte": {
+            "date": "IVe siècle av. J-C",
+            "text": "La catapulte aurait été inventée à la fin du ive siècle av. J-C. à Syracuse en Sicile. Il s’agit d’une machine à torsion dont l’énergie provenait de bois courbé ou de fibres animales (nerfs de bœufs, boyaux d’animaux…). La grande sensibilité de ces matériaux à l’humidité explique en grande partie sa modeste performance dans les climats tempérés de l’Occident, et par conséquent son abandon au vie siècle après J-C. Les boulets projetés par les catapultes variaient de quelques kilos à 50 kilos et étaient adaptées à la taille des machines utilisées.",
+            "personnes": 10,
+            "poids": 150,
+            "portee": 300,
+            "cadence": "1-2"
+        },
+        "Couillard": {
+            "date": "XIV-XVIe siècle",
+            "text": "C’est la machine à contrepoids la plus perfectionnée. Grâce aux deux huches, la manutention est simplifiée, la charge étant divisée par deux. La portée est inférieure à celle du trébuchet, mais sa cadence de tir très élevée lui permettra de rivaliser pendant plus de deux siècles avec l’artillerie à poudre.",
+            "personnes": 30,
+            "poids": 80,
+            "portee": 180,
+            "cadence": "10"
+        },
+        "Grue": {
+            "date": "Epoque romaine jusqu'au XXe siècle",
+            "text": "Au Moyen Âge, on l’utilisait pour bâtir les châteaux et les cathédrales. Elle était actionnée par deux roues : la première pour soulever la charge, la seconde pour incliner la flèche. Compte tenu des limites de portée des flèches, il était indispensable de démonter et de remonter la grue à chaque étage de laconstruction.",
+            "personnes": 4,
+            "poids": 1000,
+            "hauteur": 300
+        },
+        "Fauconneau": {
+            "date": "XVe siècle",
+            "text": "Pièce d’artillerie à poudre de petit calibre (3 pouces) construite par un assemblage de douelles. Le fauconneau se charge par la culasse, ses projectiles atteignent 300 mètres.",
+            "personnes": 2,
+            "poids": "1-3",
+            "portee": 300,
+            "cadence": "3-4"
+        },
+        "Bricole": {
+            "date": "XII-XVe siècle",
+            "text": "De l’italien “bricola”, fait sur place. Engin défensif installé sur les remparts des forteresses, la bricole fonctionne sur le principe du balancier, avec l’introduction d’un contrepoids à traction humaine.",
+            "personnes": 20,
+            "poids": 20,
+            "portee": 80,
+            "cadence": "60"
+        },
+        "Belier": {
+            "date": "Antiquité jusqu'à Renaissance",
+            "text": "Comme son nom le laisse supposer, le bélier servait à enfoncer les portes défendant l’accès des villes ou des forteresses mais aussi à s’attaquer aux points faibles des remparts. Il était constitué d’une poutre soutenue par une charpente sur roues recouverte de matériaux peu inflammables (herbes vertes, peaux fraîchement écorchées...) et copieusement arrosés pour protéger les utilisateurs.",
+            "personnes": 12
+        },
+        "Bombarde": {
+            "date": "XIV-XVIIe siècle",
+            "text": "Utilisée pour la première fois au siège de La Réole en 1324, la bombarde a été longtemps employée plus pour son impact psychologique (son bruit faisait peur) que pour son efficacité réelle. Une fois son usage bien maîtrisé, cette arme a remplacé progressivement les machines d’artillerie mécanique au cours des xve et xvie siècles.",
+            "personnes": 4,
+            "poids": 100,
+            "portee": 250,
+            "cadence": "2"
+        },
+        "Arbalete": {
+            "date": "XIe siècle",
+            "text": "L’arbalète à tour ou à treuil tire son nom du mécanisme qui sert à bander l’arc. Celui-ci est composite – bois, nerfs, tendons – jusqu’au milieu du xve siècle. Ces arcs très puissants ont l’inconvénient majeur de voir ces composants se distendre par temps humide.",
+            "personnes": 2,
+            "portee": 300
+        },
+        "Beffroi": {
+            "date": "Depuis l'Antiquité",
+            "text": "Machine de siège connue dès l’Antiquité sous des noms divers : hélépole, truie, tour roulante, sambuque… Une fois les douves comblées, le beffroi était approché des remparts grâce à un ingénieux système de traction, le ”mouflage” : système déjà décrit par Archimède en 212 av. J-C. qui permettait de tirer la tour en toute sécurité à l’aide de cordes et de poulies horizontales placées à l’avant. Il existait plusieurs types de beffrois, des plus simples quiabritaient des archers pourgêner les défenseurs de la place, aux véritables forteresses roulantes couplées avec un bélier à leur base et un trébuchet à leur sommet. Le château de Tiffauges possède deux beffrois. D’une hauteur de 18 mètres, le beffroi situé face au donjon est le plus haut de France.",
+            "contient": 100,
+            "hauteur": 18
+        }
+    }
+}

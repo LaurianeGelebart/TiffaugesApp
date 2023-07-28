@@ -14,16 +14,17 @@ export default {
     return {}
   },
   methods: {},
-  beforeMount() {}
+  beforeMount() { }
 }
 </script>
   
 <style scoped>
-.Game{
+.EditJSON {
   background: rgb(209, 171, 2);
   height: 30vh;
   position: relative;
 }
+
 @media screen and (max-width: 1024px) {}
-@media screen and (max-width: 768px) {}
-</style>
+
+@media screen and (max-width: 768px) {}</style>

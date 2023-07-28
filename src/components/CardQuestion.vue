@@ -1,21 +1,25 @@
 <template>
   <div class="cardQuestion">
-    <div v-if="state === 'question'" class="question">
-      <p class="textQuestion">{{ question }}</p>
+    <p class="textQuestion">{{ question }}</p>
+    <!-- <div v-if="image" class="preview"> -->
+    <img v-if="image" class="imageQuestion" :src="'./img/' + image">
+    <!-- </div> -->
+    <audio v-if="audio" controls>
+      <source :src="'./audio/' + audio" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <!-- <img class="bulle" src="../assets/img/bulle.svg"> -->
+    <div class="proposals">
       <button v-for="(proposal) in proposals" class="button proposal" :key=proposal v-on:click="checkAnswer(proposal)">{{
         proposal }}</button>
     </div>
-    <div v-if="state === 'OK' || state === 'KO'" class="OK">
-      <h2>{{ state }}</h2>
-      <p v-if="state === 'OK'">{{ explanations.OK }}</p>
-      <p v-if="state === 'KO'">{{ explanations.KO }}</p>
-      <button v-on:click="continuePress()" class="button">Continuer</button>
-    </div>
-    <img class="bulle" src="../assets/img/bulle.svg">
+    <!-- <img class="femme" src="../assets/img/femme.svg"> -->
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   name: 'CardQuestion',
   components: {},
@@ -23,55 +27,73 @@ export default {
     question: { type: String, required: true },
     proposals: { type: Object, required: true },
     answer: { type: String, required: true },
-    explanations: { type: Object, required: true },
-    activQuestion: { type: Number, required: true }
+    image: { type: String, required: false },
+    audio: { type: String, required: false }
   },
-  emits: ["update:activQuestion"],
   data() {
-    return {
-      state: "question"
-    }
+    return {};
   },
   methods: {
+    ...mapMutations(['setGameState']),
     checkAnswer(userAnswer) {
-      console.log(userAnswer)
-      if (userAnswer == this.answer) this.correctAnswer()
-      else this.wrongAnswer()
-    },
-    correctAnswer() {
-      this.state = "OK"
-    },
-    wrongAnswer() {
-      this.state = "KO"
-    },
-    continuePress() {
-      this.state = 'question'
-      this.$emit("update:activQuestion", this.activQuestion + 1)
+      if (userAnswer === this.answer) {
+        this.setGameState("OK");
+      } else {
+        this.setGameState("KO");
+      }
     }
   },
   beforeMount() { }
-}
+};
 </script>
+
   
 <style scoped>
 .cardQuestion {
-  background: center no-repeat url(../assets/img/cadre.svg);
-  height: 60vh;
-  width: 90vw;
-  margin: 2rem auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.textQuestion{
-  margin: 6rem 3rem 2rem;  
-  font-size: 1.3rem;
+
+.textQuestion {}
+
+.proposal {
+  width: 40vw;
+  height: 6vh;
 }
-.proposal{
-  margin: 0.5rem 3rem;  
-  font-size: 1.3rem;
-  width: 10rem;
-  height: 3rem;
+
+.bulle {
+  width: 30vw;
+  float: right;
+  margin: -1rem 0 0;
 }
-.bulle{
-  width: 10rem;
+
+.preview {
+  background-color: #382B09;
+  padding: 1rem 0.5rem;
+  background: no-repeat url(../assets/img/cadre4-3.svg);
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+
+.imageQuestion {
+  width: 80%;
+}
+
+.femme {
+  width: 32vh;
+  position: absolute;
+  bottom: -25vh;
+  right: -30vw;
+}
+
+audio {
+  width: 80%;
+}
+
+.proposals {
+  margin: auto 0;
 }
 
 @media screen and (max-width: 1024px) {}

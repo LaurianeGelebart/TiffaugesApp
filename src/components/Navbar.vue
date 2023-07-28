@@ -1,43 +1,52 @@
 <template>
   <nav>
-    <button v-for="(page) in pages" :key="page" v-on:click="() => isActiv(page.name)">
+    <router-link to="/Tiffauges/" v-for="(page) in pages" :key="page" v-on:click="() => isActiv(page.name)"
+      class="navLink">
       <img :src="page.src" :alt="page.alt">
-    </button>
+    </router-link>
   </nav>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   name: 'NavbarMachine',
   props: {
-    activPage: { type: String, required: true },
     pages: { type: Object, required: true },
   },
-  emits: ["update:activPage"],
   data() {
     return {}
   },
   methods: {
+    ...mapMutations(['setActivPage']),
     isActiv(page) {
-      this.isOpen = false;
-      this.$emit("update:activPage", page)
+      this.isOpen = false
+      this.setActivPage(page)
     }
   }
 }
 </script>
 
 <style scoped>
-button{
+.navLink {
   border: none;
-  width:5rem;
   margin: 0.5rem;
   cursor: pointer;
+  z-index: 1;
 }
-nav{
+
+.navLink img {
+  width: 5rem;
+}
+
+nav {
   position: fixed;
   bottom: 0;
   right: 0;
 }
+
 @media screen and (max-width: 1024px) {}
+
 @media screen and (max-width: 768px) {}
 </style>

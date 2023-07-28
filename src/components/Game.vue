@@ -1,44 +1,65 @@
 <template>
   <section class="Game">
-    <CardQuestion class="questionsPart" v-if="questions[activQuestion]" v-model:activQuestion="activQuestion"
-      :question="questions[activQuestion].question" :proposals="questions[activQuestion].proposals"
-      :answer="questions[activQuestion].answer" :explanations="questions[activQuestion].explanations">
-    </CardQuestion>
-    <War class="warPart"></War>
+    <PanelsManager class="panel" v-if="this.gameState !== 'attaque' && this.gameState !== 'recommence'">
+    </PanelsManager>
+    <War :isPlayed="isPlayed" class="warPart"></War>
   </section>
 </template>
- 
+
 <script>
-import { getDataQuestions } from '@/api/getData.js'
-import CardQuestion from '@/components/CardQuestion.vue'
+import PanelsManager from '@/components/PanelsManager.vue'
 import War from '@/components/War.vue'
+import { mapState, mapMutations } from 'vuex';
 
 export default {
   name: 'QuestionManager',
   props: {},
   components: {
-    CardQuestion,
+    PanelsManager,
     War
   },
   data() {
     return {
-      questions: [],
-      activQuestion: 0,
-      nbQuestions: 0
+      isPlayed: false,
+      delayDuration: 2000,
     }
+  },
+  computed: {
+    ...mapState(['gameState']),
+    ...mapState(['nbSuccess']),
   },
   methods: {
-    async retrieveData() {
-      this.questions = await getDataQuestions()
-      this.nbQuestions = this.questions.length
-      console.log(this.nbQuestions)
-    }
+    ...mapMutations(['setGameState']),
+    ...mapMutations(['setNbSuccess']),
+  },
+  watch: {
+    gameState(newValue) {
+      if (newValue === "attaque") {
+        this.isPlayed = true
+        setTimeout(() => {
+          this.isPlayed = false
+          let state
+          this.setNbSuccess(this.nbSuccess + 1)
+          if (this.nbSuccess >= 5) {
+            state = "win"
+          }
+          else {
+            state = "question"
+          }
+          setTimeout(() => {
+            this.setGameState(state)
+          }, this.delayDuration)
+        }, this.delayDuration)
+      } else {
+        this.isPlayed = false
+      }
+    },
   },
   beforeMount() {
-    this.retrieveData()
   }
-}
+};
 </script>
+
   
 <style scoped>
 .Game {
@@ -54,12 +75,13 @@ export default {
   z-index: 0;
 }
 
-.questionsPart {
+.panel {
   position: absolute;
   top: 20vw;
   left: 5vw;
   z-index: 1;
 }
+
 
 @media screen and (max-width: 1024px) {}
 

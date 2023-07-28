@@ -1,0 +1,131 @@
+{
+    "questions": [
+        {
+            "question": "Notre objectif: casser la muraille, quelle machine est t'il préférable d'utiliser ?",
+            "proposals": [
+                "Le trébuchet",
+                "La bricole",
+                "La catapulte"
+            ],
+            "answer": "Le trébuchet",
+            "explanations": {
+                "OK": "Bien joué, seul le trébuchet est adapté à cette tâche. La catapulte n'est plus utilisée depuis le VIème siècle ap J-C et la bricole est un engin défensif. ",
+                "KO": "Dommage, impossible de casser le mur. La catapulte n'est plus utilisée depuis le VIème siècle ap J-C et la bricole est un engin défensif. Seul le trébuchet est adapté à cette tâche."
+            }
+        },
+        {
+            "question": "Le trébuchet c’est bien mais c’est lent à recharger. Quelle autre puissante machine peuvent armer les soldats ? ",
+            "proposals": [
+                "Le beffroi",
+                "Le couillard",
+                "Le bélier"
+            ],
+            "answer": "Le couillard",
+            "explanations": {
+                "OK": "Bien joué, c’est bien le couillard qui peut être utilisé. Il tire moins loin mais à une cadence de tir presque 10 fois supérieure à celle d’un trébuchet.",
+                "KO": "Dommage, ni le beffroi, ni le bélier ne sont capables de tirer des boulets sur l'ennemi. Par contre, un couillard lui, peut tirer presque 10 fois plus rapidement qu’un trébuchet."
+            }
+        },
+        {
+            "question": "On nous tire dessus ! Je ne vois pas bien, mais ce bruit était vraiment effrayant. Est-ce une bricole ?",
+            "proposals": [
+                "Oui",
+                "Non"
+            ],
+            "answer": "Non",
+            "audio" : "son.mp3",
+            "explanations": {
+                "OK": "Bien joué, avec un bruit pareil, c’était une bombarde. Son bruit faisait tellement peur qu’à ses débuts elle était surtout utilisée pour son impact psychologique.",
+                "KO": "Dommage, avec un bruit pareil, c’était une bombarde. Son bruit faisait tellement peur qu’à ses débuts elle était surtout utilisée pour son impact psychologique."
+            }
+        },
+        {
+            "question": "Les servants nous font des signes, le mangonneau semble-t-il prêt à tirer ?",
+            "proposals": [
+                "Oui",
+                "Non"
+            ],
+            "answer": "Non",
+            "image": "treb.jpg",
+            "explanations": {
+                "OK": "Dommage, un mangonneau armé ressemble plutôt à ça.",
+                "KO": "Bien joué, un mangonneau armé ressemble plutôt à ça.", 
+                "image": "treb.jpg"
+            }
+        },
+        {
+            "question": "Nous avons besoin d'une machine pour défoncer ce qu’il reste du mur. Quel engin pourrait nous être utile ?",
+            "proposals": [
+                "Le fauconneau",
+                "Le bélier",
+                "Le beffroi"
+            ],
+            "answer": "Le bélier",
+            "explanations": {
+                "OK": "Bien joué, C’est le bélier qui permet de détruire les murs et les portes des châteaux attaqués. Alors que le beffroi est utilisé pour approcher les assaillants des murailles et le fauconneau est un engin d’artillerie.",
+                "KO": "Dommage, un beffroi est utilisé pour approcher les assaillants des murailles et le fauconneau est un engin d’artillerie. C’est le bélier qui permet de détruire les murs et les portes des châteaux attaqués. "
+            }
+        },
+        {
+            "question": "C'est le moment de l'assaut, nous envoyons le beffroi. Combien de soldats au maximum peuvent s'y protéger durant la manœuvre d'approche ?",
+            "proposals": [
+                "30",
+                "100",
+                "300"
+            ],
+            "answer": "100",
+            "explanations": {
+                "OK": "Bien joué, les beffrois utilisés sur un siège comme ici peuvent abriter une centaine d’archers.",
+                "KO": "Dommage, les beffrois utilisés sur un siège comme ici peuvent abriter une centaine d’archers. "
+            }
+        },
+        {
+            "question": "texte de la question 7",
+            "proposals": [
+                "Vrai",
+                "Faux"
+            ],
+            "answer": "Vrai",
+            "explanations": {
+                "OK": "Bravo ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "KO": "Dommage ! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        },
+        {
+            "question": "texte de la question 8",
+            "proposals": [
+                "Vrai",
+                "Faux"
+            ],
+            "answer": "Vrai",
+            "explanations": {
+                "OK": "Bravo ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "KO": "Dommage ! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        },
+        {
+            "question": "texte de la question 9",
+            "proposals": [
+                "Vrai",
+                "Faux"
+            ],
+            "answer": "Vrai",
+            "explanations": {
+                "OK": "Bravo ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "KO": "Dommage ! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        },
+        {
+            "question": "texte de la question 10",
+            "proposals": [
+                "Vrai",
+                "Faux"
+            ],
+            "answer": "Vrai",
+            "explanations": {
+                "OK": "Bravo ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "KO": "Dommage ! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        }
+    ]
+}

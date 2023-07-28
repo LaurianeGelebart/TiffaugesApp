@@ -1,0 +1,71 @@
+{
+    "beginningText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "machinesGallery": [
+        {
+            "name": "Trébuchet",
+            "img": "image.jpg"
+        },
+        {
+            "name": "Mangonneau",
+            "img": "image.jpg"
+        },
+        {
+            "name": "Catapulte",
+            "img": "image.jpg"
+        }
+    ],
+    "infosMachine": {
+        "Trébuchet": {
+            "date": "XII-XVIe siècle",
+            "text": "blablabla le trébuchet. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "personnes": 10,
+            "poids": 150,
+            "portee": 300,
+            "cadence": "1-2"
+        },
+        "Mangonneau": {
+            "date": "XII-XVIe siècle",
+            "text": "blablabla le mangonneau. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "personnes": 10,
+            "poids": 150,
+            "portee": 300,
+            "cadence": "1-2"
+        },
+        "Catapulte": {
+            "date": "XII-XVIe siècle",
+            "text": "blablabla la catapulte. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "personnes": 10,
+            "poids": 150,
+            "portee": 300,
+            "cadence": "1-2"
+        }
+    },
+    "questions": [
+        {
+            "question": "On veut casser la muraille quelle machine est t-il préférable d'utiliser ?",
+            "proposals": [
+                "Le trébuchet",
+                "La bricole",
+                "La catabulte"
+            ],
+            "answer": "Le trébuchet",
+            "explanations": {
+                "OK": "Bravo ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "KO": "Dommage ! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        },
+        {
+            "question": "texte de la question 2",
+            "proposals": [
+                "Le trébuchet",
+                "La bricole",
+                "La catabulte"
+            ],
+            "answer": "Le trébuchet",
+            "explanations": {
+                "OK": "Bravo ! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "KO": "Dommage ! Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            }
+        }
+    ]
+}
